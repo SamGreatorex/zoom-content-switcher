@@ -1,0 +1,33 @@
+service: content-switcher
+provider:
+  name: aws
+  stage: dev
+  profile: aws-dev-user
+  region: eu-west-2
+custom:
+  client:
+    bucketName: content-switcher-${opt:stage, self:provider.stage}
+    distributionFolder: build
+    indexDocument: index.html
+    errorDocument: index.html
+    uploadOrder:
+      - .*/apps/.*
+      - .*/assets/.*
+      - .*/css/.*
+      - .*/fonts/.*
+      - .*/iconfont/.*
+      - .*/images/.*
+      - .*/maintmode/.*
+      - .*/p2pmigration/.*
+      - .*/predictive-engagement-website/.*
+      - .*/static/.*
+      - .*/testdrive/.*
+      - .*/webChatComponent/.*
+      - .*/wizard/.*
+      - .js
+      - .json
+      - .ico
+      - .txt
+      - .html
+plugins:
+  - serverless-finch
