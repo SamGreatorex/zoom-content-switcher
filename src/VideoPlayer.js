@@ -18,7 +18,8 @@ import ZoomVirtualAgent from './media/VirtualAgent.mp4'
 
 const videoData = [
     {id: 0, Title: 'Zoom Integrations', customerName: 'Zoom - Integrations', Logo: ZoomLogo, VideoType: 'File', Video: ZoomIntegrations },
-    {id: 1, Title: 'Exams For Zoom - Video SDK', customerName: 'Exams For Zoom ', Logo: ExamsForZoomLogo, VideoType: 'File', Video: ExamsForZoomVideo },
+    // {id: 1, Title: 'Exams For Zoom - Video SDK', customerName: 'Exams For Zoom ', Logo: ExamsForZoomLogo, VideoType: 'File', Video: ExamsForZoomVideo },
+    {id: 1, Title: 'Exams For Zoom - Video SDK', customerName: 'Exams For Zoom ', Logo: ExamsForZoomLogo, VideoType: 'Web', Video: "https://www.youtube.com/watch?v=XD2wbCjR7Xk" },
     {id: 2, Title: 'Thetalake - API / Webhooks',  customerName: 'Thetalake', Logo: ZoomLogo, VideoType: 'File', Video: Thetalake },
     {id: 3, Title: 'Zoom - Web Meeting SDK',  customerName: 'Zoom - Web Meeting SDK', VideoType: 'File',  Logo: ZoomLogo, Video: ZoomWebSDK },
     {id: 4, Title: 'Tribe - Video SDK',  customerName: 'Tribe', Logo: TribeLogo, VideoType: 'Web', Video: "https://www.youtube.com/watch?v=3DkWZYk5dsw" },
